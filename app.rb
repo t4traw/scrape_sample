@@ -21,7 +21,7 @@ driver.find_elements(:class, 'bookcomic-calendar').each do |li|
 end
 driver.quit
 
-csv_header = ['bookdate', 'bookttl', 'bookauthor', 'item-athr']
+csv_header = ['bookdate', 'bookttl', 'bookauthor', 'bookpublisher']
 
 CSV.open('result.csv', 'w') do |csv|
   csv << csv_header
